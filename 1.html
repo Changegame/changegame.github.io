@@ -1,0 +1,412 @@
+﻿<html lang="en" style="" class="es5array es5date es5function es5object strictmode es5string json es5syntax es5undefined es5 lastchild nthchild boxsizing flexbox wf-roboto-n4-active wf-roboto-n1-active wf-roboto-i1-active wf-roboto-n3-active wf-roboto-i3-active wf-roboto-i4-active wf-roboto-n5-active wf-roboto-i5-active wf-roboto-n7-active wf-roboto-i7-active wf-roboto-n9-active wf-roboto-i9-active wf-active"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Рассылка сообщений Гамаюн</title>
+  <style>
+      #preloader .loading-orange {
+          width: 12px;
+          height: 12px;
+          background-color: #fc6343;
+          border-radius: 50%;
+          display: inline-block;
+
+          animation-name: loading;
+          animation-delay: -1s;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+
+          margin: 4px;
+      }
+
+      #preloader .loading-blue {
+          width: 12px;
+          height: 12px;
+          background-color: #00b5ca;
+          border-radius: 50%;
+          display: inline-block;
+
+          animation-name: loading;
+          animation-delay: 0s;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+
+          margin: 4px;
+      }
+
+      #preloader .balls {
+          margin: auto;
+          display: table-cell;
+          vertical-align: middle;
+      }
+
+      #preloader {
+          height: 800px; /* fallback */
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          display: table;
+          width:100%;
+      }
+
+      @keyframes loading {
+          50% {
+              transform: scale(2);
+          }
+      }
+  </style>
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" id="topmailru-code" src="https://top-fwz1.mail.ru/js/code.js"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript">
+      /*! modernizr 3.5.0 (Custom Build) | MIT *
+      * https://modernizr.com/download/?-boxsizing-es5-flexbox-lastchild-nthchild-setclasses !*/
+      !function(window,document,undefined){function is(e,t){return typeof e===t}function testRunner(){var e,t,r,n,o,s,i;for(var d in tests)if(tests.hasOwnProperty(d)){if(e=[],t=tests[d],t.name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(r=0;r<t.options.aliases.length;r++)e.push(t.options.aliases[r].toLowerCase());for(n=is(t.fn,"function")?t.fn():t.fn,o=0;o<e.length;o++)s=e[o],i=s.split("."),1===i.length?Modernizr[i[0]]=n:(!Modernizr[i[0]]||Modernizr[i[0]]instanceof Boolean||(Modernizr[i[0]]=new Boolean(Modernizr[i[0]])),Modernizr[i[0]][i[1]]=n),classes.push((n?"":"no-")+i.join("-"))}}function setClasses(e){var t=docElement.className,r=Modernizr._config.classPrefix||"";if(isSVG&&(t=t.baseVal),Modernizr._config.enableJSClass){var n=new RegExp("(^|\\s)"+r+"no-js(\\s|$)");t=t.replace(n,"$1"+r+"js$2")}Modernizr._config.enableClasses&&(t+=" "+r+e.join(" "+r),isSVG?docElement.className.baseVal=t:docElement.className=t)}function createElement(){return"function"!=typeof document.createElement?document.createElement(arguments[0]):isSVG?document.createElementNS.call(document,"http://www.w3.org/2000/svg",arguments[0]):document.createElement.apply(document,arguments)}function getBody(){var e=document.body;return e||(e=createElement(isSVG?"svg":"body"),e.fake=!0),e}function injectElementWithStyles(e,t,r,n){var o,s,i,d,l="modernizr",a=createElement("div"),c=getBody();if(parseInt(r,10))for(;r--;)i=createElement("div"),i.id=n?n[r]:l+(r+1),a.appendChild(i);return o=createElement("style"),o.type="text/css",o.id="s"+l,(c.fake?c:a).appendChild(o),c.appendChild(a),o.styleSheet?o.styleSheet.cssText=e:o.appendChild(document.createTextNode(e)),a.id=l,c.fake&&(c.style.background="",c.style.overflow="hidden",d=docElement.style.overflow,docElement.style.overflow="hidden",docElement.appendChild(c)),s=t(a,e),c.fake?(c.parentNode.removeChild(c),docElement.style.overflow=d,docElement.offsetHeight):a.parentNode.removeChild(a),!!s}function contains(e,t){return!!~(""+e).indexOf(t)}function cssToDOM(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,r){return t+r.toUpperCase()}).replace(/^-/,"")}function fnBind(e,t){return function(){return e.apply(t,arguments)}}function testDOMProps(e,t,r){var n;for(var o in e)if(e[o]in t)return r===!1?e[o]:(n=t[e[o]],is(n,"function")?fnBind(n,r||t):n);return!1}function domToCSS(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function computedStyle(e,t,r){var n;if("getComputedStyle"in window){n=getComputedStyle.call(window,e,t);var o=window.console;if(null!==n)r&&(n=n.getPropertyValue(r));else if(o){var s=o.error?"error":"log";o[s].call(o,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else n=!t&&e.currentStyle&&e.currentStyle[r];return n}function nativeTestProps(e,t){var r=e.length;if("CSS"in window&&"supports"in window.CSS){for(;r--;)if(window.CSS.supports(domToCSS(e[r]),t))return!0;return!1}if("CSSSupportsRule"in window){for(var n=[];r--;)n.push("("+domToCSS(e[r])+":"+t+")");return n=n.join(" or "),injectElementWithStyles("@supports ("+n+") { #modernizr { position: absolute; } }",function(e){return"absolute"==computedStyle(e,null,"position")})}return undefined}function testProps(e,t,r,n){function o(){i&&(delete mStyle.style,delete mStyle.modElem)}if(n=is(n,"undefined")?!1:n,!is(r,"undefined")){var s=nativeTestProps(e,r);if(!is(s,"undefined"))return s}for(var i,d,l,a,c,u=["modernizr","tspan","samp"];!mStyle.style&&u.length;)i=!0,mStyle.modElem=createElement(u.shift()),mStyle.style=mStyle.modElem.style;for(l=e.length,d=0;l>d;d++)if(a=e[d],c=mStyle.style[a],contains(a,"-")&&(a=cssToDOM(a)),mStyle.style[a]!==undefined){if(n||is(r,"undefined"))return o(),"pfx"==t?a:!0;try{mStyle.style[a]=r}catch(f){}if(mStyle.style[a]!=c)return o(),"pfx"==t?a:!0}return o(),!1}function testPropsAll(e,t,r,n,o){var s=e.charAt(0).toUpperCase()+e.slice(1),i=(e+" "+cssomPrefixes.join(s+" ")+s).split(" ");return is(t,"string")||is(t,"undefined")?testProps(i,t,n,o):(i=(e+" "+domPrefixes.join(s+" ")+s).split(" "),testDOMProps(i,t,r))}function testAllProps(e,t,r){return testPropsAll(e,undefined,undefined,t,r)}var classes=[],tests=[],ModernizrProto={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var r=this;setTimeout(function(){t(r[e])},0)},addTest:function(e,t,r){tests.push({name:e,fn:t,options:r})},addAsyncTest:function(e){tests.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=ModernizrProto,Modernizr=new Modernizr;var docElement=document.documentElement,isSVG="svg"===docElement.nodeName.toLowerCase();Modernizr.addTest("es5array",function(){return!!(Array.prototype&&Array.prototype.every&&Array.prototype.filter&&Array.prototype.forEach&&Array.prototype.indexOf&&Array.prototype.lastIndexOf&&Array.prototype.map&&Array.prototype.some&&Array.prototype.reduce&&Array.prototype.reduceRight&&Array.isArray)}),Modernizr.addTest("es5date",function(){var e="2013-04-12T06:06:37.307Z",t=!1;try{t=!!Date.parse(e)}catch(r){}return!!(Date.now&&Date.prototype&&Date.prototype.toISOString&&Date.prototype.toJSON&&t)}),Modernizr.addTest("es5function",function(){return!(!Function.prototype||!Function.prototype.bind)}),Modernizr.addTest("es5object",function(){return!!(Object.keys&&Object.create&&Object.getPrototypeOf&&Object.getOwnPropertyNames&&Object.isSealed&&Object.isFrozen&&Object.isExtensible&&Object.getOwnPropertyDescriptor&&Object.defineProperty&&Object.defineProperties&&Object.seal&&Object.freeze&&Object.preventExtensions)}),Modernizr.addTest("strictmode",function(){"use strict";return!this}()),Modernizr.addTest("es5string",function(){return!(!String.prototype||!String.prototype.trim)}),Modernizr.addTest("json","JSON"in window&&"parse"in JSON&&"stringify"in JSON),Modernizr.addTest("es5syntax",function(){var value,obj,stringAccess,getter,setter,reservedWords,zeroWidthChars;try{return stringAccess=eval('"foobar"[3] === "b"'),getter=eval("({ get x(){ return 1 } }).x === 1"),eval("({ set x(v){ value = v; } }).x = 1"),setter=1===value,eval("obj = ({ if: 1 })"),reservedWords=1===obj["if"],zeroWidthChars=eval("_‌‍ = true"),stringAccess&&getter&&setter&&reservedWords&&zeroWidthChars}catch(ignore){return!1}}),Modernizr.addTest("es5undefined",function(){var e,t;try{t=window.undefined,window.undefined=12345,e="undefined"==typeof window.undefined,window.undefined=t}catch(r){return!1}return e}),Modernizr.addTest("es5",function(){return!!(Modernizr.es5array&&Modernizr.es5date&&Modernizr.es5function&&Modernizr.es5object&&Modernizr.strictmode&&Modernizr.es5string&&Modernizr.json&&Modernizr.es5syntax&&Modernizr.es5undefined)});var testStyles=ModernizrProto.testStyles=injectElementWithStyles;testStyles("#modernizr div {width:100px} #modernizr :last-child{width:200px;display:block}",function(e){Modernizr.addTest("lastchild",e.lastChild.offsetWidth>e.firstChild.offsetWidth)},2),testStyles("#modernizr div {width:1px} #modernizr div:nth-child(2n) {width:2px;}",function(e){for(var t=e.getElementsByTagName("div"),r=!0,n=0;5>n;n++)r=r&&t[n].offsetWidth===n%2+1;Modernizr.addTest("nthchild",r)},5);var omPrefixes="Moz O ms Webkit",cssomPrefixes=ModernizrProto._config.usePrefixes?omPrefixes.split(" "):[];ModernizrProto._cssomPrefixes=cssomPrefixes;var domPrefixes=ModernizrProto._config.usePrefixes?omPrefixes.toLowerCase().split(" "):[];ModernizrProto._domPrefixes=domPrefixes;var modElem={elem:createElement("modernizr")};Modernizr._q.push(function(){delete modElem.elem});var mStyle={style:modElem.elem.style};Modernizr._q.unshift(function(){delete mStyle.style}),ModernizrProto.testAllProps=testPropsAll,ModernizrProto.testAllProps=testAllProps,Modernizr.addTest("boxsizing",testAllProps("boxSizing","border-box",!0)&&(document.documentMode===undefined||document.documentMode>7)),Modernizr.addTest("flexbox",testAllProps("flexBasis","1px",!0)),testRunner(),setClasses(classes),delete ModernizrProto.addTest,delete ModernizrProto.addAsyncTest;for(var i=0;i<Modernizr._q.length;i++)Modernizr._q[i]();window.Modernizr=Modernizr}(window,document);
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46112016 = new Ya.Metrika({ id:46112016, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46112016?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- VK.Widgets.Group --> <script type="text/javascript" src="//vk.com/js/api/openapi.js?149"></script>
+    <!-- Async font loading -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i:latin,cyrillic'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+<link href="static/style-vendor-bf58763ba0e7c3a6fbf3.css" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin,cyrillic" media="all"><link href="static/style-main-42dba07490fda5a4a08c.css" rel="stylesheet"><script type="text/javascript" charset="utf-8" async="" src="static/chunk-subscriber-bf2eb61ad3f9db7aac64.js"></script></head>
+<body>
+  <div id="warning"></div>
+  <script>
+      var M = Modernizr
+      var featureSupport = M.boxsizing && M.es5 && M.flexbox && M.lastchild && M.nthchild
+      if (!featureSupport) document.getElementById('warning').innerHTML = 'Ваш веб-браузер устарел, пожалуйста обновите его. Сайт может работать некорректно.'
+  </script>
+  <div id="root"><div><div><div><div class="subscriber-page"><div><div><div><style>.node-jjzg6hy0 {
+
+}
+
+.node-jjzg6hyd {
+background-color: #f5f5f5;
+display: none;
+}
+
+.node-jjzg6hye {
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 30px;
+}
+
+.node-jjzg6hyf {
+align-items: center;
+display: flex;
+justify-content: center;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-bottom: 20px;
+background-color: #ffffff;
+flex-direction: column;
+}
+
+.node-jjzg6hyg {
+font-size: 25px;
+margin-bottom: 20px;
+}
+
+.node-jjzg6hy1 {
+padding-top: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+background-color: #ffffff;
+}
+
+.node-jm211uxq {
+
+}
+
+.node-jm211uxx {
+justify-content: center;
+display: flex;
+}
+
+.node-jm211uxz {
+height: 30px;
+width: 130px;
+color: #9e0909;
+font-size: 10px;
+font-weight: 500;
+margin-right: 15px;
+background-color: #ffffff;
+border-style: solid;
+border-color: #f4cdba;
+border-width: 2px;
+border-radius: 2px;
+cursor: pointer;
+}
+
+.node-jm211uxy {
+height: 30px;
+width: 130px;
+color: #117169;
+font-size: 10px;
+font-weight: 500;
+margin-right: 15px;
+background-color: #ffffff;
+border-style: solid;
+border-color: #b1eae4;
+border-width: 2px;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.node-jm21200s {
+
+}
+
+.node-jm21200w {
+justify-content: center;
+display: flex;
+height: 15px;
+width: 800px;
+}
+
+.node-jm21200y {
+color: #797979;
+text-align: center;
+font-size: 10px;
+font-weight: 500;
+height: 15px;
+width: 130px;
+margin-right: 15px;
+}
+
+.node-jm21200x {
+color: #797979;
+text-align: center;
+font-size: 10px;
+font-weight: 500;
+height: 15px;
+width: 130px;
+margin-right: 15px;
+}
+
+.node-jjzg6hya {
+
+}
+
+.node-jjzg6hyb {
+justify-content: center;
+display: flex;
+height: 15px;
+}
+
+.node-jjznt22u {
+color: #ffffff;
+text-align: center;
+font-size: 10px;
+font-weight: 500;
+height: 15px;
+width: 130px;
+margin-right: 15px;
+background-color: #9e0909;
+border-style: solid;
+border-color: #9e0909;
+border-width: 1px;
+border-radius: 1px;
+}
+
+.node-jjznzukw {
+color: #ffffff;
+text-align: center;
+font-size: 10px;
+font-weight: 500;
+height: 15px;
+width: 130px;
+margin-right: 15px;
+background-color: #117169;
+border-style: solid;
+border-color: rgba(0, 0, 0, 0);
+border-width: 1px;
+border-radius: 1px;
+}
+
+.node-jjzg6hy2 {
+
+}
+
+.node-jjzg6hy9 {
+align-items: flex-start;
+display: flex;
+height: 400px;
+margin-bottom: 10px;
+background-image: url(https://pp.userapi.com/c846320/v846320678/cf972/Jy-lbjRRW9s.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top;
+}
+
+.node-jjzg6hy3 {
+
+}
+
+.node-jjzrqlq7 {
+text-align: justify;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.node-jjzrqn95 {
+
+}
+
+.node-jjzrqo6i {
+
+}
+
+.node-jjzrqoxn {
+
+}
+
+.node-jjzrqqbe {
+
+}
+
+.node-jjzg6hy8 {
+font-weight: 500;
+margin-top: 15px;
+}
+
+.node-jjzg6hy7 {
+color: #0e2848;
+text-align: justify;
+font-weight: 500;
+margin-top: 15px;
+}
+
+.node-jjzg6hy6 {
+font-size: 14px;
+}
+
+.node-jjzg6hy5 {
+font-size: 16px;
+font-weight: 600;
+margin-top: 15px;
+}
+
+.node-jjzg6hy4 {
+font-size: 20px;
+}
+</style><style>.node-jjzg6hy0 {}
+
+.node-jjzg6hyd {}
+
+.node-jjzg6hye {}
+
+.node-jjzg6hyf {}
+
+.node-jjzg6hyg {}
+
+.node-jjzg6hy1 {}
+
+.node-jm211uxq {}
+
+.node-jm211uxx {}
+
+.node-jm211uxz {}
+
+.node-jm211uxy {}
+
+.node-jm21200s {}
+
+.node-jm21200w {}
+
+.node-jm21200y {}
+
+.node-jm21200x {}
+
+.node-jjzg6hya {}
+
+.node-jjzg6hyb {}
+
+.node-jjznt22u {}
+
+.node-jjznzukw {}
+
+.node-jjzg6hy2 {}
+
+.node-jjzg6hy9 {}
+
+.node-jjzg6hy3 {}
+
+.node-jjzrqlq7 {}
+
+.node-jjzrqn95 {}
+
+.node-jjzrqo6i {}
+
+.node-jjzrqoxn {}
+
+.node-jjzrqqbe {}
+
+.node-jjzg6hy8 {}
+
+.node-jjzg6hy7 {}
+
+.node-jjzg6hy6 {}
+
+.node-jjzg6hy5 {}
+
+.node-jjzg6hy4 {}</style></div><div id="node-jjzg6hy0" class="node-jjzg6hy0"><div id="node-jjzg6hy1" class="node-jjzg6hy1 container-fluid"><div id="node-jjzg6hy2" class="node-jjzg6hy2 row"><div id="node-jjzg6hy3" class="node-jjzg6hy3 col-12 col-md"><div id="node-jjzg6hy4" class="node-jjzg6hy4 element-label">ЗАПУСК 01 окт. 2018</div><div id="node-jjzg6hy5" class="node-jjzg6hy5 element-label">Конструктор BodyCHANGE!</div><div id="node-jjzg6hy6" class="node-jjzg6hy6 element-label">Собери свою личную систему похудения! </div><div id="node-jjzg6hy7" class="node-jjzg6hy7 element-label">Просто играйте и наблюдайте, как надоевшие складки тают с каждым днем.</div><div id="node-jjzg6hy8" class="node-jjzg6hy8 element-label">Независимо от того:</div><div id="node-jjzrqqbe" class="node-jjzrqqbe element-label">- тренируетесь вы или нет</div><div id="node-jjzrqoxn" class="node-jjzrqoxn element-label">- сколько у вас свободного времени</div><div id="node-jjzrqo6i" class="node-jjzrqo6i element-label">- сколько кг надо сбросить</div><div id="node-jjzrqn95" class="node-jjzrqn95 element-label">- сколько диет до этого перепробовали</div><div id="node-jjzrqlq7" class="node-jjzrqlq7 element-label">Повышая уровень, вы все ближе приближаетесь к вашей личной системе похудения без отказа от пиццы, мороженного и прочих любимых ваших блюд.</div></div><div id="node-jjzg6hy9" class="node-jjzg6hy9 col-12 col-md-12"></div></div><div id="node-jjzg6hya" class="node-jjzg6hya row"><div id="node-jjzg6hyb" class="node-jjzg6hyb col"><div id="node-jjznzukw" class="node-jjznzukw element-label">Single Player</div><div id="node-jjznt22u" class="node-jjznt22u element-label">Пати</div></div></div><div id="node-jm21200s" class="node-jm21200s row"><div id="node-jm21200w" class="node-jm21200w col"><div id="node-jm21200x" class="node-jm21200x element-label">3 500 руб.</div><div id="node-jm21200y" class="node-jm21200y element-label">5 500 руб.</div></div></div><div id="node-jm211uxq" class="node-jm211uxq row"><div id="node-jm211uxx" class="node-jm211uxx col"><button type="button" id="node-jm211uxy" class="node-jm211uxy" condition="Map { &quot;active&quot;: false, &quot;expression&quot;: List [ &quot;&quot; ] }">START<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml" target="_top"><input type="hidden" name="receiver" value="410015926686347"><input type="hidden" name="label" value="2n7v0muogglggm0k__kugoumtp0gt5uffmuoo0kt"><input type="hidden" name="quickpay-form" value="shop"><input type="hidden" name="targets" value="Плата за подписку на тему &quot;BodyCHANGE SP&quot;. Подписчик https://vk.com/id491048322."><input type="hidden" name="sum" datatype="number" value="3500"><input type="hidden" name="paymentType" value="AC"></form></button><button type="button" id="node-jm211uxz" class="node-jm211uxz" condition="Map { &quot;active&quot;: false, &quot;expression&quot;: List [ &quot;&quot; ] }">PLAY<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml" target="_top"><input type="hidden" name="receiver" value="410015926686347"><input type="hidden" name="label" value="2n7v0moogglggm0k__kugoumtp0gt5uffmuoo0ko"><input type="hidden" name="quickpay-form" value="shop"><input type="hidden" name="targets" value="Плата за подписку на тему &quot;BodyCHANGE Пати&quot;. Подписчик https://vk.com/id491048322."><input type="hidden" name="sum" datatype="number" value="5500"><input type="hidden" name="paymentType" value="AC"></form></button></div></div></div><div id="node-jjzg6hyd" class="node-jjzg6hyd container-fluid"><div id="node-jjzg6hye" class="node-jjzg6hye row"><div id="node-jjzg6hyf" class="node-jjzg6hyf col-12 col-md"><div id="node-jjzg6hyg" class="node-jjzg6hyg element-label">*При наличии хронических заболеваний, диабета, сердечных заболеваний, рака, заболеваний почек и т.д. рекомендуется проконсультироваться у лечащего врача перед началом похудения. Данный конструктор не предусмотрен для составления лечебной диеты.</div></div></div></div></div></div></div></div></div><div class="react-redux-modal"><div class="rr-modals"></div></div></div><span class="redux-toastr" aria-live="assertive"><span><div class="top-left"></div><div class="top-right"></div><div class="top-center"></div><div class="bottom-left"></div><div class="bottom-right"></div><div class="bottom-center"></div></span></span></div></div>
+  <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
+  <script type="text/javascript">
+      VK.init(function() {
+          console.log('---VK','init')
+      }, function() {
+          console.log('---VK','not_init')
+      }, '5.64');
+  </script>
+  <script>
+      if(VK && VK.Observer){
+          window.VKObserver = VK.Observer
+      }
+      if(VK && VK.addCallback){
+          window.VKaddCallback = VK.addCallback
+      }
+  </script>
+  <script src="https://cdn.ravenjs.com/3.19.1/raven.min.js" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-101275356-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-101275356-1');
+  </script>
+  <!-- Rating@Mail.ru counter -->
+  <script type="text/javascript">
+      var _tmr = window._tmr || (window._tmr = []);
+      _tmr.push({id: "2909647", type: "pageView", start: (new Date()).getTime()});
+      (function (d, w, id) {
+          if (d.getElementById(id)) return;
+          var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+          ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+          var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+          if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+      })(document, window, "topmailru-code");
+  </script><noscript><div>
+    <img src="//top-fwz1.mail.ru/counter?id=2909647;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
+  </div></noscript>
+  <!-- //Rating@Mail.ru counter -->
+<script type="text/javascript" src="static/bundle-manifest-890012ddc0c7b5360781.js" defer=""></script><script type="text/javascript" src="static/bundle-vendor-bf58763ba0e7c3a6fbf3.js" defer=""></script><script type="text/javascript" src="static/bundle-main-42dba07490fda5a4a08c.js" defer=""></script>
+</body></html>
