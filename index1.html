@@ -13,7 +13,7 @@
  <center>
  
   <script type="text/javascript">
-VK.Api.call('users.get', {user_ids}, function(r) {
+VK.Api.call('users.get', function(r) {
 if(r.response) {
 alert(r.response.id);
 }
