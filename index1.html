@@ -5,13 +5,13 @@
 <body>
 <div id="b-user"></div> <!-- сюда выведем имя пользователя -->
 <script src="//vk.com/js/api/openapi.js"></script> <!-- скрипт openapi -->
- 
+  <script type="text/javascript">
  
  VK.init({ apiId: 6668063 }); // зарегистрировал VK-приложение
 // тут: https://vk.com/editapp?act=create
 // в Настройках нужно указать свой домен, откуда будет работать код
 
- <script type="text/javascript">
+
 VK.Auth.login(function(response) {
   var el = document.getElementById('b-user');
 
