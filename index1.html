@@ -1,8 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head>
+ <script src="https://vk.com/js/api/openapi.js?159" type="text/javascript"></script>
 </head>
 <body leftmargin="0" topmargin="0" style="color: rgb(192, 192, 192); background-color: black;" alink="#d6d6d6" link="#ffffff" marginheight="0" marginwidth="0" vlink="#ffffff">
-<center>
+
+ <script type="text/javascript">
+  VK.init({
+    apiId: 6668063
+  });
+</script>
+ 
+ <center>
  
   <script type="text/javascript">
 VK.Api.call('users.get', {user_ids}, function(r) {
