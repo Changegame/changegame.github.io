@@ -8,9 +8,22 @@
   VK.init({
     apiId: 6668063
   });
+  
+  VK.Auth.login(function(response) {
+    if (response.session) {
+        showAuthData(response.session);
+
+        if (response.settings) {
+            console.log(response.settings);
+            // Выбранные настройки доступа пользователя если они были запрошены
+        }
+    } else {
+        // Пользователь нажал кнопку Отмена в окне авторизации 
+    }
+}); 
+  
 </script>
- 
- <center>
+
  
  <script type="text/javascript">
 VK.Api.call('users.get', {user_ids: 497020028, fields: 'bdate'}, function(r) {
