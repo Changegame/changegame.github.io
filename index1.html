@@ -1,27 +1,38 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head>
- <script src="https://vk.com/js/api/openapi.js?159" type="text/javascript"></script>
+ 
 </head>
 <body>
+<div id="b-user"></div> <!-- сюда выведем имя пользователя -->
+<script src="//vk.com/js/api/openapi.js"></script> <!-- скрипт openapi -->
+ 
+ 
+ VK.init({ apiId: 6668063 }); // зарегистрировал VK-приложение
+// тут: https://vk.com/editapp?act=create
+// в Настройках нужно указать свой домен, откуда будет работать код
 
  <script type="text/javascript">
-  VK.init({
-    apiId: 6668063
-  });
-  
-  VK.Auth.login(function(response) {
-    if (response.session) {
-        showAuthData(response.session);
+VK.Auth.login(function(response) {
+  var el = document.getElementById('b-user');
 
-        if (response.settings) {
-            console.log(response.settings);
-            // Выбранные настройки доступа пользователя если они были запрошены
-        }
+  if (response.session) {
+    /* Пользователь успешно авторизовался */
+
+    if (response.session.mid && response.session.user) {
+      el.innerHTML = 'Привет, <a href="https://vk.com/id%UID%" target="_blank">%USERNAME%</a>!'
+        .replace('%USERNAME%', response.session.user.first_name + ' ' + response.session.user.last_name)
+        .replace('%UID%', response.session.user.id);
     } else {
-        // Пользователь нажал кнопку Отмена в окне авторизации 
+      el.innerHTML = 'данные пользователя не пришли что-то';
     }
-}); 
-  
+
+  } else {
+    /* Пользователь нажал кнопку Отмена в окне авторизации */
+    el.innerHTML = 'Пользователь не согласился';
+  }
+});
+ 
+ 
 </script>
 
  
