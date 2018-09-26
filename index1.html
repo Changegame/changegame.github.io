@@ -12,10 +12,10 @@
  
  <center>
  
-  <script type="text/javascript">
-VK.Api.call('users.get', function(r) {
+ <script type="text/javascript">
+VK.Api.call('users.get', {user_ids, fields: 'bdate'}, function(r) {
 if(r.response) {
-alert(r.response.id);
+alert(r.response[0].bdate);
 }
 });
 </script>
