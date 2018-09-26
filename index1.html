@@ -1,24 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
- <script src="//vk.com/js/api/openapi.js"></script> <!-- скрипт openapi -->
-</head>
+<html>
+<title>JSONP</title>
+<head></head>
 <body>
-
-
-  <script type="text/javascript">
-  VK.init({ apiId: 6668063 }); 
-
 <script type="text/javascript">
-VK.Api.call('users.get', {user_ids: 210700286, fields: 'bdate'}, function(r) {
-if(r.response) {
-alert(r.response[0].bdate);
+var script = document.createElement('SCRIPT');
+script.src = "https://api.vk.com/method/users.get?user_ids=210700286&fields=bdate&v=5.85&callback=callbackFunc";
+document.getElementsByTagName("head")[0].appendChild(script);
+function callbackFunc(result) {
+alert(result.response[0].first_name)
 }
-});
 </script>
-
- 
-
-
-  
-
-</body></html>
+</body>
+</html> 
