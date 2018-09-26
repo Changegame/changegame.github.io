@@ -13,24 +13,26 @@
 
 
 VK.Auth.login(function(response) {
-  var el = document.getElementById('b-user');
+    if (response.session) {
+        showAuthData(response.session);
 
-  if (response.session) {
-    /* Пользователь успешно авторизовался */
-
-    if (response.session.mid && response.session.user) {
-      el.innerHTML = 'Привет, <a href="https://vk.com/id%UID%" target="_blank">%USERNAME%</a>!'
-        .replace('%USERNAME%', response.session.user.first_name + ' ' + response.session.user.last_name)
-        .replace('%UID%', response.session.user.id);
+        if (response.settings) {
+            console.log(response.settings);
+            // Выбранные настройки доступа пользователя если они были запрошены
+        }
     } else {
-      el.innerHTML = 'данные пользователя не пришли что-то';
+        // Пользователь нажал кнопку Отмена в окне авторизации 
     }
+}); 
 
-  } else {
-    /* Пользователь нажал кнопку Отмена в окне авторизации */
-    el.innerHTML = 'Пользователь не согласился';
-  }
-});
+
+function showAuthData(data) {
+    $('body').append('<p>expire: ' + data.expire +'</p>');
+    $('body').append('<p>mid: ' + data.mid +'</p>');
+    $('body').append('<p>fio: ' + data.user.first_name + ' ' + data.user.last_name +'</p>');
+    $('body').append('<p>userDomain: ' + data.user.domain +'</p>');
+    $('body').append('<p>-----------------------------------------------</p>');
+}
  
  
 </script>
