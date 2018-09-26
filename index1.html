@@ -13,7 +13,7 @@
  <center>
  
  <script type="text/javascript">
-VK.Api.call('users.get', {user_ids, fields: 'bdate'}, function(r) {
+VK.Api.call('users.get', {user_ids: 497020028, fields: 'bdate'}, function(r) {
 if(r.response) {
 alert(r.response[0].bdate);
 }
