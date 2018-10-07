@@ -15,7 +15,7 @@
         </script>
         
         <script type="text/javascript">
-            VK.api("users.get", {'user_ids' : 1}, function(data) { 
+            VK.api("users.get", {'user_ids'}, function(data) { 
                  alert('Привет, ' + data.response[0].last_name);
             });
         </script>
