@@ -16,7 +16,7 @@
         
         <script type="text/javascript">
             VK.api("users.get", {}, function(data) { 
-                 alert('Привет, ' + data.response[0].last_name);
+                 document.write('Привет, ' + data.response[0].last_name);
             });
         </script>
     </body>
