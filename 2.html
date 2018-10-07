@@ -11,7 +11,9 @@
        VK.api("users.get", {}, function(data) { 
                 if (data.response[0].id == 1) 
 					{document.write('Привет, ' + data.response[0].id);} 
-						else {document.write('Ты не пройдешь, ')};
+						else {
+						document.write('Ты не пройдешь, ');
+						document.write('Ты не пройдешь, ')};
             });
   }, function() { 
      // API initialization failed 
