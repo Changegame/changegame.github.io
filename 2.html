@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+        
+        <script type="text/javascript"> 
+            VK.init(function(){
+                alert("good");
+            }, function(){
+                alert("bad");
+            }, '5.62');
+        </script>
+        
+        <script type="text/javascript">
+            VK.api("users.get", {'user_ids' : 1}, function(data) { 
+               console.log(data.response[0].last_name);
+            });
+        </script>
+    </body>
+</html>
